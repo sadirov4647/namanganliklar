@@ -101,7 +101,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    cursor: pointer;
+    cursor: pointer;transition: ease 0.3s;
 }
 .site_nav_right_btn{
     display: contents;
@@ -109,6 +109,11 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
+    
+}
+.site_nav_right_button:hover{
+    color: #ffffff;
+    transform: translateY(-5px);
 }
 .site_nav_right_btn img{
     margin-right: 7px;
@@ -335,8 +340,13 @@ main{
     border-radius: 5px;
     background-color: #295093;;
     color: #ffffff;
+    transition: ease 0.3s;
 }
-
+.show-more:hover{
+    background-color: lightblue;
+    transform: translateX(5px);
+    color: #FE5C28;
+}
 
 
 
@@ -391,7 +401,13 @@ main{
     display: flex;
 }
 .main_footer_link{
+    transition: all 0.3s;
+}
+.main_footer_link:not(:last-child){
     margin-right: 20px;
+}
+.main_footer_link:hover{
+    transform: scale(1.1);
 }
 .main_footer_section_left{
     margin-right: 74px;
@@ -465,6 +481,12 @@ main{
     border-radius: 5px;
     margin-left: 10px;
     text-decoration: none;
+    transition: ease 0.3s;
+}
+.social__btn:hover{
+    background-color: #05B135;
+    transform: translateY(-5px);
+    color: #ffffffff;
 }
 
 .social__btn::before {
@@ -606,6 +628,7 @@ textarea{
 }
 input[type="file"]{
     padding: 0;
+    width: 266px;
 }
 input[type="password"]{ 
     width: 221px;
