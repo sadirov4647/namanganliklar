@@ -144,7 +144,6 @@ body {
   color: var(--blue);
 }
 .site_header_image {
-  display: none;
   padding-bottom: 23px;
   max-width: 100%;
 }
